@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <button data-page="withholding">WITHHOLDING TAX</button>
+      <button data-page="payable">PAYABLE TAX</button>
+      <button data-page="income">INCOME TAX</button>
+      <button data-page="sscl">SSCL TAX</button>
+      <button data-page="leasing">LEASING PAYMENTS</button>
+    </nav>
+  </header>
+
+  <h1 id="pageTitle">WITHHOLDING TAX CALCULATOR</h1><br>
+
+  <main class="card">
+    <div class="options"></div>
+    <input id="amountInput" type="text" placeholder="Enter Amount in LKR" />
+    <button id="calculateTax">Calculate Tax</button>
+  </main>
+  <main class="card">
+    <div id="resultBox" class="result-box" style="display:none;"></div>
+  </main>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
